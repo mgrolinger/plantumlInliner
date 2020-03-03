@@ -21,6 +21,7 @@ Common.iuml has information such as variables, functions or whatever needed in a
 a.puml includes common.iuml and b/b.iuml, which e.g. contains another compont and functions related to that component. The same goes for c.iuml.
 
 ```plantuml
+@startuml Given
 file a.puml
 file common.iuml
 a.puml -- common.iuml : 1st include
@@ -33,12 +34,14 @@ folder "b"{
         }
          b.iuml -- c.iuml : 3rd include
 }
+@enduml
 ```
 
 ### Result
 
 1 file with all data from the 4 files above in hopefully the correct order, which is necessary for **!functions**, and only once included, which is important if you have defined a **!final function**.
 ```plantuml
+@startuml Result
 file output.puml{
     note as content #LightYellow
     content of a.puml
@@ -47,4 +50,5 @@ file output.puml{
     content of c.iuml
 end note
 }
+@enduml
 ```
