@@ -22,16 +22,17 @@ a.puml includes common.iuml and b/b.iuml, which e.g. contains another compont an
 
 ```plantuml
 file a.puml
+file common.iuml
+a.puml -- common.iuml : 1st include
+
 folder "b"{
     file b.iuml
+    a.puml -- b.iuml : 2nd include
     folder "c" {
         file c.iuml
         }
          b.iuml -- c.iuml : 3rd include
 }
-file common.iuml
- a.puml -- common.iuml : 1st include
- a.puml -- b.iuml : 2nd include
 ```
 
 ### Result
