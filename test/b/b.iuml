@@ -1,0 +1,6 @@
+@startuml
+!include ../common.iuml
+4
+!include c/c.iuml
+6
+@enduml

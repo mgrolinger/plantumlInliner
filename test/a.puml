@@ -1,0 +1,7 @@
+@startuml
+1
+!include common.iuml
+3
+!include b/b.iuml
+7
+@enduml
