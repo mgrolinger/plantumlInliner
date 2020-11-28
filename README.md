@@ -17,25 +17,18 @@ There is a tiny example in the (manual) test folder.
 ### Given
 
 4 files a.puml, b.iuml, c.iuml and common.iuml.
-Common.iuml has information such as variables, functions or whatever needed in any other file.
-a.puml includes common.iuml and b/b.iuml, which e.g. contains another compont and functions related to that component. The same goes for c.iuml.
-
-```plantuml
-@startuml Given
-file a.puml
-file common.iuml
-a.puml -- common.iuml : 1st include
-
-folder "b"{
-    file b.iuml
-    a.puml -- b.iuml : 2nd include
-    folder "c" {
-        file c.iuml
-        }
-         b.iuml -- c.iuml : 3rd include
-}
-@enduml
 ```
+$ tree
+.
+├── a.iuml
+└── b/
+|   ├── b.puml
+|   └── c/
+|       └── c.puml
+└── common.iuml
+```
+Where Common.iuml has information such as variables, functions or whatever needed in any other file.
+a.puml includes common.iuml and b.iuml, which e.g. contains another compont and functions related to that component. The same goes for c.iuml.
 
 ### Result
 
