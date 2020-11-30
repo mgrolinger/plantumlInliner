@@ -8,7 +8,7 @@ There are no frills and no guarantee. It worked for me with Python 3.8.2
 
 ## Usage
 
-**python.exe inliner.py** **--path** _"c:/path/to/folder/"_ **--input** _firstFile.puml_ **--output** _output.puml_ 
+**python.exe inliner.py** **--path** _"c:/path/to/folder/"_ **--input** _rootFile.puml_ **--output** _output.puml_ 
 
 ## Example
 
@@ -27,7 +27,7 @@ $ tree
 |       └── c.puml
 └── common.iuml
 ```
-Where Common.iuml has information such as variables, functions or whatever needed in any other file.
+Where common.iuml has information such as variables, functions or whatever needed in any other file.
 a.puml includes common.iuml and b.iuml, which e.g. contains another compont and functions related to that component. The same goes for c.iuml.
 
 ### Result
