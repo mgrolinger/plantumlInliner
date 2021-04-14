@@ -2,7 +2,7 @@
 
 This is a small script that will help to merge all subsequent PlantUML-files that are included by the **!include**-directive.
 
-Usually, I work with an oo-approach of define once and use everywhere for my PlantUML definition of components and sequences. So, sometimes a single file includes 5, 10 or 50 other files. However, sometimes I need a single file that I can share with someone or even use with the PlantUML Confluence plugin. This script does the job for me.
+Usually, I work with an object oriented approach of define once and use everywhere for my PlantUML definition of components and sequences. So, sometimes a single file includes 5, 10 or 50 other files. However, sometimes I need a single file that I can share with someone or even use with the PlantUML Confluence plugin. This script does the job for me.
 
 There are no frills and no guarantee. It worked for me with Python 3.8.2
 
